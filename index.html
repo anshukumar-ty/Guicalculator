@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GUI CALCULATOR</title>
+</head>
+
+<body>
+    <h1>GUI CALCULATOR</h1>
+    <form name="form">
+
+        <div class="container2">
+            
+            <div class="container1">
+                <input type="text" placeholder="0" name="displayresult">
+            </div>
+            
+            <div class="container"><input type="button" name="b3" value="7" onclick="func(b3.value)"></div>
+            <div class="container"><input type="button" name="b4" value="8" onclick="func(b4.value)"></div>
+            <div class="container"><input type="button" name="b5" value="9" onclick="func(b5.value)"></div>
+            <div class="container"><input type="button" name="b6" value="*" onclick="func(b6.value)"></div>
+            <div class="container"><input type="button" name="a1" value="4" onclick="func(a1.value)"></div>
+            <div class="container"><input type="button" name="a2" value="5" onclick="func(a2.value)"></div>
+            <div class="container"><input type="button" name="a3" value="6" onclick="func(a3.value)"></div>
+            <div class="container"><input type="button" name="a4" value="-" onclick="func(a4.value)"></div>
+            <div class="container"><input type="button" name="a5" value="1" onclick="func(a5.value)"></div>
+            <div class="container"><input type="button" name="a6" value="2" onclick="func(a6.value)"></div>
+            <div class="container"><input type="button" name="a7" value="3" onclick="func(a7.value)"></div>
+            <div class="container"><input type="button" name="a8" value="+" onclick="func(a8.value)"></div>
+            <div class="container"><input type="button" name="a9" value="/" onclick="func(a9.value)"></div>
+            <div class="container"><input type="button" name="c1" value="0" onclick="func(c1.value)"></div>
+            <div class="container"><input type="button" name="c2" value="." onclick="func(c2.value)"></div>
+            <div class="container"><input type="button" name="c3" value="=" onclick="displayresult.value=eval(displayresult.value)"></div>
+        </div>
+    </form>
+    <script>
+        function func(result) {
+            form.displayresult.value = form.displayresult.value + result;
+        }
+
+    </script>
+</body>
+
+</html>
